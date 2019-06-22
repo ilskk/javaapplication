@@ -3,7 +3,11 @@ package com.kk.reflect.entity;
 import com.kk.reflect.interfaces.MyInterface;
 import com.kk.reflect.interfaces.MyInterface2;
 
-public class Person implements MyInterface, MyInterface2 {
+import java.io.Serializable;
+
+public class Person implements MyInterface, MyInterface2, Serializable {
+
+    private static final long serialVersionUID=1234L;
 
     private Integer id;
     private String name;

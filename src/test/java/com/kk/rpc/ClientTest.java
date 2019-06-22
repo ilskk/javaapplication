@@ -1,7 +1,7 @@
 package com.kk.rpc;
 
 import com.kk.rpc.server.HelloService;
-import com.kk.rpc.server.client.Client;
+import com.kk.rpc.client.Client;
 
 import java.net.InetSocketAddress;
 

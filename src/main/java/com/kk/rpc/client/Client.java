@@ -1,4 +1,4 @@
-package com.kk.rpc.server.client;
+package com.kk.rpc.client;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

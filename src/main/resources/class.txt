@@ -1,0 +1,2 @@
+className=com.kk.reflect.entity.People
+methodName=work

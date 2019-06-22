@@ -1,6 +1,7 @@
 package com.kk.reflect.entity;
 
 public class People {
+
     private String string;
 
     public void work(){

@@ -43,6 +43,17 @@
       <version>2.4</version>
       <classifier>jdk15</classifier><!--指定jdk版本-->
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>core</artifactId>
+      <version>3.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.kk</groupId>
+      <artifactId>QRCode</artifactId>
+      <version>1.0.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -88,4 +99,5 @@
       </resource>
     </resources>
   </build>
+
 </project>

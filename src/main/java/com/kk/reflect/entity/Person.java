@@ -12,10 +12,7 @@ public class Person implements MyInterface, MyInterface2, Serializable {
     private Integer id;
     private String name;
     private Integer age;
-    public boolean flag;
-
-    public Person() {
-    }
+    private Address address;
 
     @Override
     public String toString() {
@@ -23,9 +20,21 @@ public class Person implements MyInterface, MyInterface2, Serializable {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", flag=" + flag +
+                ", address=" + address +
                 '}';
     }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public Person() {
+    }
+
 
     private Person(Integer id) {
         this.id = id;
@@ -35,10 +44,11 @@ public class Person implements MyInterface, MyInterface2, Serializable {
         this.name = name;
     }
 
-    public Person(Integer id, String name, Integer age) {
+    public Person(Integer id, String name, Integer age, Address address) {
         this.id = id;
         this.name = name;
         this.age = age;
+        this.address = address;
     }
 
     private static void privateMethod(){
@@ -81,13 +91,5 @@ public class Person implements MyInterface, MyInterface2, Serializable {
 
     public void setAge(Integer age) {
         this.age = age;
-    }
-
-    public boolean isFlag() {
-        return flag;
-    }
-
-    public void setFlag(boolean flag) {
-        this.flag = flag;
     }
 }

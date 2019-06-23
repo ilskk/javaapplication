@@ -15,7 +15,7 @@ public class SplitAndMergeFile {
     //碎片文件长度
     private static int partLength=(int)resource.length()/5;
 
-    //分拆文件
+    //拆分文件
     public static void split()throws Exception{
         //思路:1个输入流,多个输出流
         FileInputStream fis=new FileInputStream(resource);

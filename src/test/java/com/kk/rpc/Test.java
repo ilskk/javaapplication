@@ -1,9 +1,12 @@
 package com.kk.rpc;
 
 import com.kk.rpc.server.HelloService;
+import com.kk.rpc.client.Client;
 import com.kk.rpc.server.HelloServiceImpl;
 import com.kk.rpc.server.ServiceCenter;
 import com.kk.rpc.server.ServiceCenterImpl;
+
+import java.net.InetSocketAddress;
 
 /*
 RPC:远程过程调用
@@ -20,7 +23,7 @@ RPC:远程过程调用
             执行完毕后再将该方法的返回值返回给客户端;
 
  */
-public class ServerTest {
+class Server{
 
     public static void main(String[] args){
         //开启一个线程
@@ -34,6 +37,15 @@ public class ServerTest {
                 service.start();
             }
         }).start();
+    }
+}
 
+class C{
+
+    public static void main(String[] args)throws Exception{
+        HelloService service=
+            Client.getRemoteProxyObject(Class.forName("com.kk.rpc.server.HelloService"),
+                    new InetSocketAddress("127.0.0.1",9999));
+        System.out.println( service.sayHi("什么鬼"));
     }
 }

@@ -84,7 +84,7 @@ public class Test_call {
     static void dynamicLoad()throws Exception{
 
         Properties prop=new Properties();
-        prop.load(new FileReader("src\\main\\resources\\class.txt"));
+        prop.load(new FileReader("src\\main\\resources\\reflect\\class.txt"));
 
         String className = prop.getProperty("className");
         String methodName = prop.getProperty("methodName");

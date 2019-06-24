@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dogs>
+    <dog id="1">
+        <name>YAYA</name>
+        <age>11</age>
+    </dog>
+    <dog id="2">
+        <name>UOUO</name>
+        <age>22</age>
+    </dog>
+    <dog id="3">
+        <name>ERER</name>
+        <age>33</age>
+    </dog>
+</dogs>

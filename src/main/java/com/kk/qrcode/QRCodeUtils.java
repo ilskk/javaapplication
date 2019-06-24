@@ -1,4 +1,4 @@
-package com.kk.qrcode.util;
+package com.kk.qrcode;
 
 
 import com.kk.qrcode.QRCodeImg;

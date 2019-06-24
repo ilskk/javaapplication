@@ -1,7 +1,5 @@
 package com.kk.qrcode;
 
-import com.kk.qrcode.util.QRCodeUtils;
-
 public class Demo {
 
     public static void demo()throws Exception{
